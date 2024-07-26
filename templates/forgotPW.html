@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tune Score | Reset password</title>
+    <link rel="icon" type="image/x-icon" href="/static/images/favicon.ico">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body class="login-body">
+    <header class="index-heading" id="index-heading">
+        <div id="index-heading-left"></div>
+        <div id="index-heading-right"></div>
+        <div id="index-heading-right2"></div>
+    </header>
+
+    <main class="forgotPW-container">
+        <form class="form" id="forgotPW-form">
+            <h1 class="form__title">Reset password</h1>
+            <p class="form__text">Enter your email to reset your password.</p>
+            <p id="errorText"  class="errorText"></p>
+
+            <div class="form__input-group">
+                <input type="text" class="form__input" id="email-input" name="email-input" required autofocus placeholder="Email">
+            </div>
+        </form> 
+            <button id="forgotPW-button">Submit</button>
+            {% if not SessionUserID %}
+                <p class="form__text">
+                    <a href="{{ url_for('signup') }}" class="form__link">Create account</a>
+                </p>
+            {% endif %}
+        </main>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script> 
+</body>
+</html>

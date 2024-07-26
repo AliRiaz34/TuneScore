@@ -1,0 +1,1343 @@
+html {
+    height: 100vh;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer {
+    padding-top: 100px;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* index */
+.index-heading {
+    position: sticky;
+    top: 0px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1000;
+    width: 85%;
+    margin-bottom: 100px;
+    padding-left: 7.5%;
+    padding-right: 7.5%;
+    padding-top: 12px;
+    padding-bottom: 20px;
+    background-color: rgb(39, 39, 39);
+    transition: all 0.3s ease;
+}
+
+#searchbar-menu {
+    display: block;
+    width: 300px;
+    height: 40px;
+    font-size: 0.85em;
+    padding-left: 10px;
+    margin-right: 80px;
+    min-width: 200px;
+    margin-top: 15px;
+    box-sizing: border-box;
+    border: 1px solid #dddddd;
+    border-radius: 12px;
+    background: #eeeeee;
+}
+
+#index-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    min-width: 814px;
+    margin: auto;
+}
+
+#index-heading-left {
+    display: flex;
+    justify-content: space-between;
+    width: 33%;
+    margin-top: 13px;
+    margin-right: 5px;
+    min-width: 480px;
+}
+
+#index-users-table {
+    border-collapse: collapse;
+    padding-left: 4px;
+    text-align: left;
+    width: 200px;
+}
+
+#index-score-table {
+    border-collapse: collapse;
+    padding-left: 4px;
+    text-align: left;
+    width: 100%;
+    min-width: 500px;
+    height: 40px;
+}
+
+#index-score-head-div {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 390px;
+}
+
+#index-score-div {
+    width: 100%;
+    margin-right: 10px;
+}
+
+.score-td {
+    padding-left: 10px;
+    padding-top: 12px;
+    height: 10px;
+    font-size: 1.2em;
+    padding-bottom: 12px;
+    border-bottom: 2px solid rgb(240, 240, 240);
+}
+
+.index-score-th {
+    padding: 6px 6px 6px 10px;
+    color: white;
+    font-size: 1.5rem;
+    border-bottom: 2px solid rgb(240, 240, 240);
+    text-shadow: 1px 1px 1px black ;
+    background-color: rgb(39, 39, 39);
+}
+
+.index-h1 {
+    margin-top: 0px;
+    margin-bottom: 6px;
+    margin-right: 20px;
+    font-size: 2em;
+}
+
+.scrollit {
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 400px;
+    margin-right: 50px;
+}
+
+.menu-button {
+    width: 120px;
+    padding: 10px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 12px;
+    outline: none;
+    margin-top: 12px;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(61, 117, 177);
+    text-shadow: 1px 1px 1px black;
+}
+
+.menu-button:hover {
+    background-color: rgb(81, 148, 224);
+}
+
+.menu-button-logout {
+    margin-top: 16px;
+    margin-left: 5px;
+    width: 90px;
+    height: 33px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+    outline: none;
+    cursor: pointer;
+    background-color: rgb(206, 105, 105);
+}
+
+.menu-button-logout:hover {
+    background-color: rgb(148, 67, 67);
+    border: one;
+}
+
+#index-heading-right {
+    display: flex;
+    justify-content: space-between;
+    min-width: 710px;
+}
+
+.menu-pfp {
+    padding-bottom: 0px;
+    margin-bottom: 5px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.menu-link {
+    text-align: center;
+    min-width: 220px;   
+    padding-right: 10px;
+    font-size: 2em;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(240, 238, 238);
+    text-shadow: 2px 2px 2px black ;
+    height: 40px;
+    
+}
+
+.menu-link:hover {
+    color: white;
+    text-decoration: none;
+}
+
+
+/* login, forget password and signup */
+.login-body {
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    font-size: 18px;
+
+}
+
+.errorText {
+    color:darkred;
+    font-size: 1em;
+    text-align: center;
+}
+
+.successText {
+    color:darkseagreen;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+.form > *:last-child {
+    margin-bottom: 0;
+}
+
+.form__title {
+    margin-bottom: 1.2rem;
+    font-size: 1.9em;
+    text-align: center;
+}
+
+.form__message {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.form__input-group {
+    margin-top: 6px;
+    margin-bottom: 17px;
+}
+
+.form__input {
+    display: block;
+    width: 100%;
+    font-size: 0.85em;
+    padding: 0.65rem;
+    box-sizing: border-box;
+    border: 1px solid #dddddd;
+    border-radius: 12px;
+    outline: none;
+    background: #eeeeee;
+}
+
+.form__message-error{
+    color: darkred;
+    font-size: 1.1em;
+
+}
+
+.form__message-success{
+    color: darkseagreen;
+}
+
+.form__button {
+    margin-left: 20%;
+    margin-top: 5px;
+    width: 60%;
+    padding: 7px;
+    font-size: 1.2em;
+    font-weight: bold;
+    border: 1px solid white;
+    border-radius: 12px;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(61, 117, 177);
+}
+
+.form__button:hover {
+    background-color: rgb(81, 148, 224);
+}
+
+.form__text {
+    text-align: center;
+}
+
+.form__link {
+    text-decoration: none;
+    font-size: 0.9em;
+    cursor: pointer;
+}
+
+.form__link:hover {
+    text-decoration: underline;
+}
+
+/* profile*/ 
+
+#profile-container {
+    width: 50%;
+    margin: auto;
+}
+
+#profile-upper {
+    display: flex;
+    flex-direction: row;
+}
+
+#profile-upper-left {
+    display: flex;
+    flex-direction: column;
+}
+
+#profile-upper-right {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+#profile-head-div {
+    text-align:center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 3px;
+    width: 100%;
+    font-size: 1em;
+    min-width: 300px;
+    border-bottom: 2px solid gray;
+}
+
+#profile-subhead-div {
+    text-align:center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    min-width: 270px;
+    
+}
+
+.profile-subhead {
+    margin-top: 14px;
+    padding-right: 5px;
+    padding-left: 5px;
+    font-size: 1em;
+    margin-bottom: 16px;
+}
+
+#profile-bio {
+    padding-top: 0px;
+    padding-left: 10px;
+    height: 150px;
+    margin-top: 0px;
+    border: none;
+    outline: none;
+    resize: none;
+    font-size: 1.2em;
+    width: 100%;
+    min-width: 290px;
+    max-width: 400px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+#profile-icon {
+    border: 3px solid black;
+    width: 230px;
+    border-radius: 10px;
+    height: 230px;
+}
+
+#profile-button-div {
+    width: 80%;
+    margin-top: 17px;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.profile-button-form {
+    width: 100%;
+}
+
+.profile-follow-button {
+    margin-left: 20%;
+    padding: 9px;
+    width: 60%;
+    font-size: 1em;
+    color: white;
+    border: white;
+    background-color: rgb(61, 117, 177);
+    text-shadow: 1px 1px 1px black;
+    border-radius: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.profile-follow-button:hover, .modal-follow-button:hover {
+    background-color: rgb(81, 148, 224);
+}
+
+.profile-unfollow-button {
+    padding: 9px;
+    margin-left: 20%;
+    width: 60%;
+    font-size: 1em;
+    border: white;
+    background-color: rgb(216, 129, 129);
+    border-radius: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.profile-unfollow-button:hover, .modal-remove-button:hover {
+    background-color: rgb(168, 94, 94);
+}
+
+.modal-remove-button {
+    padding: 8px;
+    width: 78px;
+    font-size: 0.95em;
+    border: white;
+    background-color: rgb(216, 129, 129);
+    border-radius: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.modal-follow-button {
+    padding: 8px;
+    width: 78px;
+    font-size: 0.95em;
+    color: white;
+    border: white;
+    background-color: rgb(61, 117, 177);
+    text-shadow: 1px 1px 1px black;
+    border-radius: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.profile-head {
+    margin: 0px;
+    padding-top: 5px;
+}
+
+#profile-name {
+    font-size: 1.5em;
+    margin: 0px;
+}
+
+#profile-scores-div {
+    margin-top: 60px;
+}
+
+.follower-link {
+    height: 2px;
+}
+
+#profile-score-table {
+    border-collapse: collapse;
+    padding-left: 4px;
+    text-align: left;
+    font-size: 1em;
+    width: 100%;
+}
+
+.profile-score-head {
+    margin-bottom: 10px;
+}
+
+.profile-score-td {
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 7px;
+    border-bottom: 2px solid rgb(240, 240, 240);
+}
+
+
+.profile-score-th {
+    padding: 10px;
+    font-size: 1.2em;
+    padding-right: 7px;
+    border-bottom: 2px solid rgb(240, 240, 240);
+}
+
+
+/* edit profile page*/ 
+
+#editProfile-form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 500px;
+    margin: auto;
+    font-size: 18px;
+}
+
+#edit-profile-body {
+    margin: 0;
+    height: 100vh;
+}
+
+#edit-picture-form-div {
+    margin-bottom: 50px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+
+}
+
+#delete-user-button  {
+    margin-left: 45%;
+    margin-top: 45px;
+    margin-bottom: 40px;
+    width: 10%;
+    padding: 7px;
+    font-size: 1em;
+    font-weight: bold;
+    border: 1px solid white;
+    border-radius: 12px;
+    cursor: pointer;
+    background-color: rgb(206, 105, 105);
+}
+
+#delete-user-button:hover {
+    background-color: rgb(184, 87, 87);
+}
+
+#profile-edit-icon {
+    border: 3px solid black;
+    border-radius: 10px;
+    width: 220px;
+    height: 220px;
+}
+
+#cancel-picture-button {
+    padding: 5px 14px;
+    font-size: 1rem;
+    font-weight: bold;
+    outline: none;
+    border-radius: 12px;
+    border: white;
+    background-color: rgb(206, 105, 105);
+    cursor: pointer;
+}
+
+#cancel-picture-button:hover {
+    background-color: rgb(184, 86, 86);
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload {
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px 14px;
+    cursor: pointer;
+    border-radius: 12px;
+    border: white;
+    color: white;
+    background-color: rgb(61, 117, 177);
+}
+
+.custom-file-upload:hover {
+    background-color: rgb(81, 148, 224);
+}
+
+.form-label {
+    font-size: 0.9em;
+    padding-left: 5px;
+}
+
+.form__input_bio {
+    display: block;
+    width: 100%;
+    padding: 0.65rem;
+    padding-bottom: 70px;
+    box-sizing: border-box;
+    border: 1px solid #dddddd;
+    font-size: 0.9em;
+    border-radius: 12px;
+    outline: none;
+    background: #eeeeee;
+    resize: none;  
+}
+
+#charCount, #nameCount {
+    margin-left: 10px;
+    font-size: 0.8em;
+    text-align: right;
+}
+
+/* followers/following page*/ 
+.follower-icon {
+    padding-bottom: 0px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.follow-td-icon {
+    width: 54px;
+    padding-right: 11px;
+}
+
+.follow-td-unfollow {
+    width: 80px;
+}
+.follow-td-remove {
+    width: 80px;
+}
+
+.follow-td {
+    font-size: 1.1em;
+}
+
+#follow-modal {
+    border: none;
+    border-radius: 12px;
+    padding: 10px;
+    width: 380px;
+    margin-top: 250px;
+    height: 40%;
+}
+
+#modal-head {
+    position: sticky;
+    margin-top: 0px;
+    margin-bottom: 3px;
+    margin-left: 20px;
+    text-align: center;
+    width: 360px;
+    padding-top: 10px;
+    padding-bottom: 4px;
+}
+
+#modal-head-div {
+    display: flex;
+    font-size: 1em;
+    border-bottom: 1px solid black;
+    margin-bottom: 14px;
+}
+
+
+.close-modal {
+    width: 20px;
+    padding: 0px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1.3em;
+    border: none;
+    background-color: white;
+}
+
+.close-modal:focus {
+    border: none;
+    outline: none;
+}
+
+.modal-searchbar {
+    display: block;
+    width: 50%;
+    height: 40px;
+    font-size: 0.85em;
+    margin-left: 8px;
+    padding-left: 10px;
+    min-width: 80px;
+    box-sizing: border-box;
+    border: 1px solid #dddddd;
+    border-radius: 12px;
+    background: #eeeeee;
+}
+
+#modal-table  {
+    text-align: left;
+    width: 100%;
+}
+
+.searchbar {
+    display: block;
+    width: 33%;
+    height: 40px;
+    font-size: 0.9em;
+    min-width: 150px;
+    padding: 0.65rem;
+    box-sizing: border-box;
+    border: 1px solid #dddddd;
+    border-radius: 12px;
+    outline: none;
+    background: #eeeeee;
+}
+
+/* ForgotPW*/ 
+
+.forgotPW-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    margin: auto;
+    margin-top: 0px;
+    font-size: 1em;
+}
+
+#forgotPW-button {
+    margin-top: 19px;
+    padding: 7px 25px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    border: 1px solid white;
+    border-radius: 12px;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(61, 117, 177);
+}
+
+#forgotPW-button:hover {
+    background-color: rgb(81, 148, 224);
+}
+
+/* Score Library page*/ 
+#scoreLib-container {
+    width: 75%;
+    margin: auto;
+}
+
+#myScores-table {
+    border-collapse: collapse;
+    text-align: left;
+    width: 100%;
+    min-width: 500px;
+    margin-bottom: 50px;
+}
+
+#favorites-table {
+    border-collapse: collapse;
+    text-align: left;
+    width: 100%;
+    min-width: 500px;
+}
+
+#myScores-head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 310px;
+}
+
+#favorites-head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 210px;
+}
+
+
+#myScores-h1 {
+    font-size: 2.1em;
+    margin-top: 0px;
+}
+
+#favorites-h1 {
+    font-size: 2.1em;
+    margin-top: 0px;
+}
+
+.newScore-button {
+    width: 120px;
+    padding: 7px;
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 3px;
+    border: 1px solid white;
+    border-radius: 12px;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    background-color: rgb(61, 117, 177);
+}
+
+.newScore-button:hover {
+    background-color: rgb(81, 148, 224);
+}
+
+.visibility-box {
+    width: 30px;
+    height: 30px;
+    font-size: 1em;
+    margin-left: 27px;
+    font-weight: bold;
+    background-color: rgb(61, 117, 177);
+    cursor: pointer;
+}
+
+.visibility-box:hover {
+    background-color: rgb(81, 148, 224);
+}
+
+.deleteButton {
+    margin-right: 17px;
+    height: 30px;
+    width: 30px;
+    outline: none;
+    border: none;
+    background: url('/static/images/trash.png') no-repeat;
+    background-size: 30px 30px;
+}
+
+.deleteButton:hover {
+    background: url('/static/images/trashDark.png') no-repeat;
+    background-size: 30px 30px;
+    cursor: pointer;
+}
+
+#delete-score-modal, #delete-user-modal  {
+    border: none;
+    border-radius: 12px;
+    padding: 10px;
+    width: 380px;
+    margin-top: 350px;
+}
+
+#delete-score-modal-div, #delete-user-modal-div {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 17.5%;
+    width: 65%;
+}
+
+.verifyButton {
+    width: 100px;
+    padding: 9px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: 1px solid white;
+    border-radius: 12px;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(61, 117, 177);
+    text-shadow: 1px 1px 1px black;
+}
+
+.verifyButton:hover {
+    background-color: rgb(81, 148, 224);
+}
+
+
+/* score page*/ 
+#score-top-div {
+    margin: auto;
+    width: 60%;
+}
+
+#score-info-div {
+    margin-top: 15px;
+    padding-left: 10px;
+
+}
+
+#score-h1 {
+    font-size: 2em;
+    margin: 0%;
+    margin-bottom: 7px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#score-title-div {
+    display: flex;
+}
+
+#score-head {
+    display: flex;
+    border-bottom: 3px solid #ececec;
+}
+
+.edit-score-link {
+    height: 0px;
+}
+
+.edit-score-button {
+    height: 27px;
+    width: 27px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0px;
+    background: url('/static/images/editIcon.png') no-repeat;
+    background-size: 27px 27px;
+}
+
+#score-chords-div {
+    font-size: 1.1em;
+    width: 50%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 120px;
+}
+
+.score-sub-info {
+    margin: 0px;
+    color: rgb(61, 61, 61);
+}
+
+.score-sub-info-div {
+    display: flex;
+    font-size: 1em;
+    flex-direction: row;
+    height: 30px;
+    width: 620px;
+
+}
+
+.score-sub-fill {
+    margin: 0px;
+    text-align: left;
+    padding-left: 5px;
+    font-weight: bold;
+}
+
+#score-footer {    
+    position: sticky;
+    bottom: 0px;
+    background-color: rgb(39, 39, 39);
+    width: 100%;
+    padding: 0px 0px 15px 0px;
+}
+
+#score-playbar {
+    color: white;
+    height: 60px;
+    padding: 30px;
+    background-color: rgb(39, 39, 39);
+    margin: auto;
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#chords-div {
+    margin-bottom: 450px;
+}
+
+.favorite-button, .unfavorite-button {
+    width: 35px;
+    height: 35px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.favorite-button {
+    background: url('/static/images/favorite.png') no-repeat;
+    background-size: 35px 35px;
+}
+
+.unfavorite-button {
+    background: url('/static/images/unfavorite.png') no-repeat;
+    background-size: 35px 35px;
+}
+
+.volume-button, .muted-volume-button {
+    height: 30px;
+    width: 30px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding-bottom: 5px;
+}
+
+#volume-div, #speed-div, #transpose-div, #bpm-div{
+    min-width: 170px;
+    height: 35px;
+    margin: 10px;
+}
+
+.volume-button {
+    background: url('/static/images/volumeON.png') no-repeat;
+    background-size: 30px 30px;
+}
+
+.muted-volume-button {
+    background: url('/static/images/volumeOFF.png') no-repeat;
+    background-size: 30px 30px;
+}
+
+#play-button {
+    color: white;
+    font-size: 1.4em;
+    font-weight: bold;
+    width: 250px;
+    height: 55px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(45, 168, 93);
+}
+
+#play-button:focus {
+    background-color: rgb(83, 206, 124);
+
+}
+
+#reset-tempo-button {
+    color: white;
+    font-size: 1.4em;
+    font-weight: bold;
+    padding: 0px;
+    padding-right: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(39, 39, 39);
+}
+
+#tempo-value {
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+#reset-transpose-button {
+    color: white;
+    font-size: 1.4em;
+    font-weight: bold;
+    padding: 0px;
+    padding-right: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(39, 39, 39);
+}
+
+#bpm-label {
+    color: white;
+    font-size: 1.4em;
+    font-weight: bold;
+    padding-right: 10px;
+    border: none;
+    cursor: default;
+    background-color: rgb(39, 39, 39);
+}
+
+#bpm-value {
+    font-size: 1.4em;
+    font-weight: bold;
+    width: 60px;
+    height: 26px;
+    background-color: #f1f1f1;
+    border: none;
+    outline: none;
+    cursor: default;
+    color: white;
+    background-color: rgb(39, 39, 39);
+}
+
+#transpose-input {
+    font-size: 1.4em;
+    font-weight: bold;
+    width: 55px;
+    height: 26px;
+}
+
+/* score editor page*/ 
+
+.sEditor-dropdown {
+    cursor: pointer; /* change the mouse cursor icon */
+    display: block;
+    font-size: 0.9em;
+    padding: 0.65rem;
+    box-sizing: border-box;
+    border: 1px solid #dddddd;
+    border-radius: 12px;
+    outline: none;
+    background: #eeeeee;
+}
+   
+#sEditor-container {
+    display: flex;
+    margin: auto;
+    font-size: 1.1em;
+    width: 90%;
+    min-width: 1180px;
+    margin-bottom: 120px;
+    justify-content: space-between;
+    height: 100%;
+}
+
+#sEditor-head {
+    display: flex;
+}
+
+#sEditor-aside {
+    margin-left: 20px;
+}
+
+.sEditor-h1 {
+    font-size: 1.8em;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#sEditor-h2 {
+    font-size: 1.8em;
+    margin-bottom: 8px;
+    margin-top: 0px;
+}
+
+#sEditor-table {
+    width: 220px;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#sEditor-forms-div {
+    width: 40%;
+    margin-left: 70px;
+    margin-right: 40px;
+}
+
+.form__input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+#sEditor-input-fields {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 100%;
+    min-width: 430px;
+}
+
+#sEditor-input-div {
+    width: 100%;
+}
+
+.sEditor-input {
+    width: 100%;
+    font-size: 0.9em;
+    padding: 0.65rem;
+    box-sizing: border-box;
+    border: 1px solid #dddddd;
+    border-radius: 12px;
+    outline: none;
+    background: #eeeeee;
+}
+
+.sEditor-input-num {
+    display: block;
+    font-size: 0.9em;
+    padding: 0.65rem;
+    box-sizing: border-box;
+    border: 1px solid #dddddd;
+    border-radius: 12px;
+    outline: none;
+    background: #eeeeee;
+}
+
+#chords-input {
+    padding-top: 10px;
+    padding-left: 10px;
+    height: 300px;
+    margin-top: 0px;
+    border: none;
+    outline: none;
+    resize: none;
+    font-size: 1.5em;
+    width: 100%;
+    min-width: 440px;
+}
+
+#help-link {
+    cursor: pointer;
+    text-align: right;
+    margin-top: 10px;
+    margin-right: 14px;
+}
+
+#help-modal {
+    border: none;
+    border-radius: 12px;
+    padding: 20px;
+    width: 600px;
+    margin-top: 250px;
+    height: 45%;
+}
+
+#modal-head-help-div {
+    display: flex;
+    font-size: 1em;
+    border-bottom: 1px solid black;
+    margin-bottom: 14px;
+    width: 100%;
+    text-align: right;
+}
+
+#modal-head-help {
+    position: sticky;
+    margin-top: 0px;
+    margin-bottom: 3px;
+    margin-left: 20px;
+    text-align: center;
+    width: 540px;
+    padding-top: 5px;
+    padding-bottom: 4px;
+}
+
+#modal-textarea {
+    height: 100px;
+    resize: none;
+}
+
+.score-output-div * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#chords-output-div {
+    width: 40%;
+    margin: auto;
+    margin-top: 43px;
+}
+
+#score-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 15px;
+}
+
+.score-section {
+    margin-bottom: 30px;
+}
+
+.score-line {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.score-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 9em;
+}
+
+.score-bar-line, .score-bar-double-line {
+    font-size: 2.5em;
+    width: 3%;
+}
+
+.chord {
+    display: flex;
+    align-items: center;
+    margin: 0 5px;
+}
+
+.chord-root {
+    font-size: 2em;
+}
+
+.chord-extras {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 3em;
+}
+
+.chord-extras-top, .chord-extras-bottom {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+}
+
+.chord-triad, .chord-extension, .chord-add-note, .chord-accidental-notes {
+    display: inline-block;
+    padding: 0 2px;
+}
+
+#sEditor-new-button {
+    width: 40px;
+    padding: 1px;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-top: 7px;
+    margin-left: 19px;
+    border: none;
+    border-radius: 12px;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(61, 117, 177);
+}
+
+#sEditor-new-button:hover {
+    background-color: rgb(81, 148, 224);
+}
+
+/* search page*/ 
+#search-container {
+    width: 70%;
+    margin: auto;
+}
+
+#search-result-table {
+    border-collapse: collapse;
+    text-align: left;
+    width: 100%;
+    min-width: 500px;
+    margin-bottom: 50px;
+}
