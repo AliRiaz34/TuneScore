@@ -1,6 +1,4 @@
-# OscarAliExamProject
-
-Used some CSS from this webpage for login and signup page. https://dcode.domenade.com/tutorials/how-to-create-a-login-signup-form-with-html-css-javascript
+# Tune Score
 
 Start the application by running app.py in the application folder.
 
