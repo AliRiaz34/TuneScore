@@ -318,6 +318,16 @@ function updatePlaybar() {
         transposeInput.value = 0;
     }
 
+    transposeInput.addEventListener('input', function (e) {
+        let value = parseInt(e.target.value);
+        if (value > 12) {
+            e.target.value = 12;
+        } else if (value < -12) {
+            e.target.value = -12;
+        }
+    });
+
+
     let volumeButton = document.getElementById("volume-button");
     let lastVolume = getCookie("volumeValue");
 
